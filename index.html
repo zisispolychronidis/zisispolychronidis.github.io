@@ -39,6 +39,7 @@
           });
         } else {
           playStream();
+          disableButton();
         }
       }
       //Playing stream
@@ -48,6 +49,10 @@
           display: document.getElementById("play"),
         }).play();
       }
+
+      function disableButton() {
+      document.getElementById("playBtn").disabled = true;
+    }
     </script>
   </head>
   <style>
